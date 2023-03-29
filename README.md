@@ -22,8 +22,12 @@ Launch Kerbal Space Program 2. Open the save with the ballooning save file, and 
 
 ### Clean up the savefile
 
-Run `main.py` and input `1` for simple mode. Then, input the name of the save that you want to clean up (this will be the quicksave made in the last step). For example, if the quicksave name was `quicksave_431`, you would input `quicksave_431`.
+Run `main.py` and type the name of the save file to prune (this will be the quicksave created in the last step). Then, click the "Prune" button and the program will lower the save file size.
+
+An example input to the program to prune a save file named `quicksave_431`:
+
+![image](https://user-images.githubusercontent.com/98898166/228686920-a81b8fd1-bf32-4c61-9826-c28a60f1ea4b.png)
 
 ## Contributing
 
-Contributions are welcome. Currently, I am planning on adding error handling and a GUI.
+Contributions are welcome, just make a pull request.
