@@ -10,14 +10,19 @@ Creating a savefile backup is strongly recommended before running this program. 
 
 ## Running the Program
 
+### Prerequisites
+
+If you haven't already, install Python 3.11 at [python.org](https://www.python.org/).
+
+Then, download the code by clicking on Code -> Download Zip. Finally, extract the zip file.
+
 ### Create a new save
 
 Launch Kerbal Space Program 2. Open the save with the ballooning save file, and press F5 to quicksave. This will be the save to modify. Then, press escape -> load and take note of the name of the quicksave you just created, since this will be needed later.
 
 ### Clean up the savefile
 
-Run the program and input `1` for simple mode. Then, input the name of the save that you want to clean up (this will be the quicksave made in the last step). For example, if the quicksave name was `quicksave_431`, you would input `quicksave_431`.
-
+Run `main.py` and input `1` for simple mode. Then, input the name of the save that you want to clean up (this will be the quicksave made in the last step). For example, if the quicksave name was `quicksave_431`, you would input `quicksave_431`.
 
 ## Contributing
 
