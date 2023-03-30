@@ -20,13 +20,17 @@ Then, download the code by clicking on Code -> Download Zip. Finally, extract th
 
 Launch Kerbal Space Program 2. Open the save with the ballooning save file, and press F5 to quicksave. This will be the save to modify. Then, press escape -> load and take note of the name of the quicksave you just created, since this will be needed later.
 
-### Clean up the savefile
+### Prune the savefile
 
 Run `main.py` and type the name of the save file to prune (this will be the quicksave created in the last step). Then, click the "Prune" button and the program will lower the save file size.
 
 An example input to the program to prune a save file named `quicksave_431`:
 
 ![image](https://user-images.githubusercontent.com/98898166/228686920-a81b8fd1-bf32-4c61-9826-c28a60f1ea4b.png)
+
+## Final Steps
+
+Finally, load your pruned savefile and you're done.
 
 ## Contributing
 
