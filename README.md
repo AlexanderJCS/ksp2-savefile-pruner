@@ -1,6 +1,6 @@
 # ksp2-savefile-pruner
 
-This simple Python program is designed to solve a Kerbal Space Program 2 bug that makes the save file size balloon to hundreds of megabytes if not gigabytes, which can cause the save/load times to become very long. This issue is caused by repeated logging of the same event. This program deletes the repeated entries, leaving only one logging entry.
+This simple Python program is designed to solve a Kerbal Space Program 2 bug that makes the save file size balloon to hundreds of megabytes if not gigabytes, which can cause the save/load times to become very long. This issue is caused by repeated logging of the same event. This program deletes the repeated entries.
 
 ![image](https://user-images.githubusercontent.com/98898166/228409816-dcbf4472-b0bc-4a12-b47d-e35322820160.png)
 
