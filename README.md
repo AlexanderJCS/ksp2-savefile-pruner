@@ -24,7 +24,7 @@ Then, press `escape -> load` and take note of the two circled values.
 
 The upper circle highlights the campaign name, and the lower circle shows the name of the save you just created. You will need these values for the next step.
 
-![image](https://user-images.githubusercontent.com/98898166/229261246-0e5e1ff3-cdf5-4e0a-80a8-607aaa7dffd5.png)
+![image](https://user-images.githubusercontent.com/98898166/229261919-b9284302-ec7d-4e59-b873-29f940ef25fa.png)
 
 ### Prune the savefile
 
