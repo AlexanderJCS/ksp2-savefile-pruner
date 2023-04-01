@@ -23,8 +23,6 @@ def prune(quicksave_entry: tk.Entry, campaign_entry: tk.Entry, output_label: tk.
         f"/../LocalLow/Intercept Games/Kerbal Space Program 2/Saves/SinglePlayer/{campaign_name}/" \
         + quicksave_name + ".json"
 
-    print(filepath)
-
     output_label.config(text=f"Opening save {quicksave_name} in campaign {campaign_name}")
 
     try:
