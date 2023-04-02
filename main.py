@@ -31,22 +31,26 @@ def prune(quicksave_entry: tk.Entry, campaign_entry: tk.Entry, output_label: tk.
         f"/../LocalLow/Intercept Games/Kerbal Space Program 2/Saves/SinglePlayer/{campaign_name}/" \
         + quicksave_name + ".json"
 
-    output_label.config(text=f"Opening save {quicksave_name} in campaign {campaign_name}")
-
     try:
-        with open(filepath, "r") as f:
-            savefile = json.load(f)
+        before_size = os.path.getsize(filepath) / 1e6  # the size of the file in megabyes
 
     except FileNotFoundError:
         output_label.config(text=f"Could not find save {quicksave_name} inside campaign {campaign_name}")
         return
 
+    output_label.config(text=f"Opening save {quicksave_name} in campaign {campaign_name}")
+
+    with open(filepath, "r") as f:
+        savefile = json.load(f)
+
     remove_duplicates(savefile["TravelLogData"]["ObjectEvents"])
 
     with open(filepath, "w") as f:
-        json.dump(savefile, f)
+        json.dump(savefile, f, indent=2)
 
-    output_label.config(text="Complete")
+    after_size = os.path.getsize(filepath) / 1e6  # the size of the file in megabyes
+
+    output_label.config(text=f"Complete. Space saved: {round(before_size - after_size, 1)} MB")
     quicksave_entry.delete(0, tk.END)
 
 
