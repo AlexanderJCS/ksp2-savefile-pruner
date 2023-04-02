@@ -19,6 +19,14 @@ def prune(quicksave_entry: tk.Entry, campaign_entry: tk.Entry, output_label: tk.
     quicksave_name = quicksave_entry.get()
     campaign_name = campaign_entry.get()
 
+    if campaign_name == "":
+        output_label.config(text="Campaign name cannot be empty")
+        return
+
+    if quicksave_name == "":
+        output_label.config(text="Save name cannot be empty")
+        return
+
     filepath = os.getenv("APPDATA") + \
         f"/../LocalLow/Intercept Games/Kerbal Space Program 2/Saves/SinglePlayer/{campaign_name}/" \
         + quicksave_name + ".json"
